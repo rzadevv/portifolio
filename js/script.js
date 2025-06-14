@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize AOS animations
   AOS.init({
     duration: 800,
-    once: false,
-    mirror: true,
-    offset: 50,
-    easing: 'ease-out-cubic'
+    easing: 'ease-out',
+    once: true,
+    offset: 100,
+    disable: 'mobile'
   });
   
   // Selectors
@@ -367,6 +367,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Create particles for hero and contact sections
   createParticles();
+
+  // Replace flip animations with fade for smoother effect
+  projectCards.forEach((card, index) => {
+    // Remove flip animation attributes
+    card.removeAttribute('data-aos');
+    
+    // Add fade animations with sequential delay
+    card.setAttribute('data-aos', 'fade-up');
+    card.setAttribute('data-aos-delay', (index * 100).toString());
+    card.setAttribute('data-aos-duration', '600');
+  });
 });
 
 // Create interactive particles

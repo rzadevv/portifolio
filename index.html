@@ -238,8 +238,17 @@
       
       <div class="project-grid">
         <div class="project-card" data-aos="flip-left">
-          <div class="project-image">
-            <img src="img/project-1.jpg" alt="Deep Learning Gomoku Engine">
+          <div class="project-image project-icon-container">
+            <div class="project-icon gomoku-icon">
+              <i class="fas fa-brain"></i>
+              <div class="icon-grid">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span class="icon-stone black"></span><span></span><span></span>
+                <span></span><span></span><span></span><span class="icon-stone white"></span><span></span>
+                <span></span><span class="icon-stone black"></span><span></span><span></span><span></span>
+              </div>
+            </div>
             <div class="project-overlay">
               <div class="project-tech-icons">
                 <span class="tech-icon"><i class="fab fa-python"></i></span>
@@ -254,7 +263,7 @@
           <div class="project-content">
             <h3>Deep Learning Gomoku Engine</h3>
             <p class="project-tech">Python, PyTorch, Pandas, Pygame - 2025 (BSc Thesis)</p>
-            <p>Designed and trained a dual-headed Residual CNN with attention and dilation blocks on 5x5 game state, achieving 59% accuracy on unseen positions.</p>
+            <p>Designed and trained a dual-headed Residual CNN with attention and dilation blocks that evaluates 5x5 game states with 59% accuracy on unseen positions. The engine uses Monte Carlo Tree Search with neural network guidance to generate strategic moves and can play at amateur-competitive level.</p>
             <div class="project-links">
               <a href="#" class="btn btn-sm">Demo</a>
               <a href="#" class="project-github"><i class="fab fa-github"></i></a>
@@ -263,8 +272,22 @@
         </div>
 
         <div class="project-card" data-aos="flip-right">
-          <div class="project-image">
-            <img src="img/project-2.jpg" alt="HandMouse - Vision-Based Cursor Control">
+          <div class="project-image project-icon-container">
+            <div class="project-icon handmouse-icon">
+              <i class="fas fa-hand-pointer"></i>
+              <div class="hand-gesture">
+                <span class="finger thumb"></span>
+                <span class="finger index"></span>
+                <span class="finger middle"></span>
+                <span class="finger ring"></span>
+                <span class="finger pinky"></span>
+                <div class="tracking-dots">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
             <div class="project-overlay">
               <div class="project-tech-icons">
                 <span class="tech-icon"><i class="fab fa-python"></i></span>
@@ -279,7 +302,7 @@
           <div class="project-content">
             <h3>HandMouse - Vision-Based Cursor Control</h3>
             <p class="project-tech">Python, OpenCV - 2025</p>
-            <p>Engineered a real-time hand-tracking system using computer vision to detect pinch-click and V-sign gestures, enabling hands-free mouse control with customizable sensitivity.</p>
+            <p>Engineered a real-time hand-tracking system using computer vision to detect and interpret hand gestures. Features include pinch-click, V-sign gestures for right-click, and cursor positioning through finger-tip detection. The system works with standard webcams and uses adaptive thresholding for reliable detection in varied lighting conditions.</p>
             <div class="project-links">
               <a href="#" class="btn btn-sm">Demo</a>
               <a href="#" class="project-github"><i class="fab fa-github"></i></a>
@@ -288,8 +311,21 @@
         </div>
 
         <div class="project-card" data-aos="flip-up">
-          <div class="project-image">
-            <img src="img/project-3.jpg" alt="AI Recipe Recommender">
+          <div class="project-image project-icon-container">
+            <div class="project-icon recipe-icon">
+              <i class="fas fa-utensils"></i>
+              <div class="recipe-elements">
+                <span class="element plate"></span>
+                <span class="element ingredient ingredient-1"></span>
+                <span class="element ingredient ingredient-2"></span>
+                <span class="element ingredient ingredient-3"></span>
+                <div class="ai-suggestion">
+                  <span class="suggest-line"></span>
+                  <span class="suggest-line"></span>
+                  <span class="suggest-line"></span>
+                </div>
+              </div>
+            </div>
             <div class="project-overlay">
               <div class="project-tech-icons">
                 <span class="tech-icon"><i class="fab fa-python"></i></span>
@@ -304,7 +340,7 @@
           <div class="project-content">
             <h3>AI Recipe Recommender</h3>
             <p class="project-tech">Python, GPT-3.5 - 2024</p>
-            <p>Designed and deployed a personalized recipe recommendation system using GPT-3.5, integrating dietary filters and real-time user feedback to refine suggestions dynamically.</p>
+            <p>Developed a personalized recipe recommendation system using GPT-3.5 that generates detailed cooking instructions based on available ingredients. The system supports dietary restrictions, cuisine preferences, and complexity levels. A user feedback loop continuously improves recommendations through a Streamlit-based UI that displays step-by-step instructions with estimated preparation times.</p>
             <div class="project-links">
               <a href="#" class="btn btn-sm">Demo</a>
               <a href="#" class="project-github"><i class="fab fa-github"></i></a>
@@ -313,8 +349,19 @@
         </div>
 
         <div class="project-card" data-aos="flip-down">
-          <div class="project-image">
-            <img src="img/project-4.jpg" alt="Wedding Planner (Ongoing)">
+          <div class="project-image project-icon-container">
+            <div class="project-icon wedding-icon">
+              <i class="fas fa-calendar-check"></i>
+              <div class="wedding-elements">
+                <span class="element calendar"></span>
+                <span class="element task task-1"></span>
+                <span class="element task task-2"></span>
+                <span class="element task task-3"></span>
+                <div class="notification">
+                  <i class="fas fa-bell"></i>
+                </div>
+              </div>
+            </div>
             <div class="project-overlay">
               <div class="project-tech-icons">
                 <span class="tech-icon"><i class="fab fa-java"></i></span>
@@ -329,7 +376,7 @@
           <div class="project-content">
             <h3>Wedding Planner (Ongoing)</h3>
             <p class="project-tech">Java, Spring Boot, PostgreSQL - 2025</p>
-            <p>Created event planning platform for RSVP, guest list, and task management with integrated notification system.</p>
+            <p>Creating a comprehensive event planning platform for weddings with features for RSVP management, guest list tracking, vendor coordination, and budget monitoring. The microservice architecture includes real-time notifications, a responsive user dashboard, and integration with calendar systems. Currently implementing a timeline generator for event scheduling and coordination.</p>
             <div class="project-links">
               <a href="#" class="btn btn-sm">In Progress</a>
               <a href="#" class="project-github"><i class="fab fa-github"></i></a>
