@@ -1,185 +1,590 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Portfolio of RZA MIRZAYEV, a Back-End Developer specializing in Java, Python, SQL, Spring, and Git.">
-    <meta name="keywords" content="RZA MIRZAYEV, Portfolio, Web Developer, Software Engineer, Back-End Developer, Java, Python, SQL, Spring, Git">
-    <meta name="author" content="RZA MIRZAYEV">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>RZA MIRZAYEV | Portfolio</title>
-
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <!-- AOS Library CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- Smooth Scroll Behavior -->
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RZA MIRZAYEV | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<!-- Scroll Progress Bar -->
-<div id="progressBarContainer">
-    <div id="progressBar"></div>
-</div>
-
-<!-- Flying Bird Icon -->
-<img src="images/fly2.gif" alt="Flying Bird" id="flying-bird">
-
-<!-- Navigation Bar -->
-<nav id="navbar" role="navigation">
+  <!-- Navigation -->
+  <nav class="navbar">
     <div class="container">
-        <div class="logo">
-            <a href="#">RZA MIRZAYEV</a>
-        </div>
-        <button class="menu-toggle" id="mobile-menu" aria-label="Toggle Navigation">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-        <ul class="nav-links">
-            <li><a href="#home" class="nav-link active">Home</a></li>
-            <li><a href="#about" class="nav-link">About Me</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
+      <div class="logo">RZA</div>
+      <div class="nav-menu">
+        <ul>
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
-        <button id="dark-mode-toggle" aria-label="Toggle Dark Mode">🌙</button>
+      </div>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
-</nav>
+  </nav>
 
-<!-- Hero Section -->
-<section id="home" class="hero">
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
     <div class="container">
-        <h1 data-aos="fade-up">Welcome to My Portfolio</h1>
-        <p data-aos="fade-up" data-aos-delay="200">I'm <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
-        <a href="#projects" class="btn btn-hero" data-aos="fade-up" data-aos-delay="400">See My Work</a>
-    </div>
-</section>
-
-<!-- About Me Section -->
-<section id="about">
-    <div class="container about-container">
-        <div class="about-content" data-aos="fade-up">
-            <h2>About Me</h2>
-            <p>Hello, my name is Rza Mirzayev. I am a Junior Developer from Baku, Azerbaijan. I love working with a variety of technologies, especially in backend development. I’m eager to grow and contribute within a forward-thinking team.</p>
-            <p>FIND ABOUT ME:</p>
-            <div class="social-icons">
-                <a href="mailto:rzamirzayevedu@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://github.com/rzadevv" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/rza-mirzayev-527047284/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="Rza_Mirzayev_CV.pdf" target="_blank" rel="noopener noreferrer" aria-label="Download CV"><i class="fas fa-file-alt"></i></a>
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="typing-container">
+            <p class="subtitle typing-text">Computer Systems Student</p>
+          </div>
+          <div class="glitch-container">
+            <h1 class="glitch-text" data-text="Hello I'm">Hello I'm</h1>
+            <h1 class="name gradient-text">RZA MIRZAYEV</h1>
+          </div>
+          <p class="description">
+            <span class="location-flag">🇱🇻</span> Riga, Latvia | Computer Systems student with a strong interest in backend development and machine learning. Skilled in Python, Java, SQL, Spring, and related technologies. I enjoy solving real-world problems through technology and creating reliable, effective solutions.
+          </p>
+          <div class="hero-buttons">
+            <a href="#" class="btn btn-primary">
+              <span>Download CV</span>
+              <i class="fas fa-download"></i>
+            </a>
+            <div class="social-links">
+              <a href="https://github.com/rzadev" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="mailto:rzamirzayevdu@gmail.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+              <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
             </div>
+          </div>
         </div>
-    </div>
-</section>
+        <div class="hero-image">
+          <div class="profile-ring"></div>
+          <div class="profile-circle">
+            <img src="img/profile.jpg" alt="RZA MIRZAYEV" class="profile-img">
+          </div>
+          <div class="orbiting-dot dot-1"></div>
+          <div class="orbiting-dot dot-2"></div>
+          <div class="orbiting-dot dot-3"></div>
+        </div>
+      </div>
 
-<!-- Skills Section -->
-<section id="skills">
+      <div class="stats-container">
+        <div class="stat-item">
+          <div class="stat-number" data-target="21">0</div>
+          <div class="stat-label">Age</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="2">0</div>
+          <div class="stat-label">Years of experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="4">0</div>
+          <div class="stat-label">Projects completed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="3">0</div>
+          <div class="stat-label">Languages spoken</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-particles"></div>
+    <div class="code-rain"></div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills section">
     <div class="container">
-        <h2 data-aos="fade-up">Skills</h2>
-        <div class="skills-container" data-aos="fade-up" data-aos-delay="200">
-            <div class="skill-item">
-                <i class="fab fa-java"></i>
-                <h3>Java</h3>
-            </div>
-            <div class="skill-item">
+      <div class="section-header">
+        <h2>Technical <span class="gradient-text">Skills</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <div class="skills-grid">
+            <div class="skill-box" data-aos="zoom-in">
+              <div class="skill-icon">
                 <i class="fab fa-python"></i>
-                <h3>Python</h3>
+              </div>
+              <div class="skill-name">Python</div>
             </div>
-            <div class="skill-item">
+            
+            <div class="skill-box" data-aos="zoom-in" data-aos-delay="100">
+              <div class="skill-icon">
+                <i class="fab fa-java"></i>
+              </div>
+              <div class="skill-name">Java</div>
+            </div>
+            
+            <div class="skill-box" data-aos="zoom-in" data-aos-delay="200">
+              <div class="skill-icon">
+                <i class="fab fa-js"></i>
+              </div>
+              <div class="skill-name">JavaScript</div>
+            </div>
+            
+            <div class="skill-box" data-aos="zoom-in" data-aos-delay="300">
+              <div class="skill-icon">
                 <i class="fas fa-database"></i>
-                <h3>SQL</h3>
+              </div>
+              <div class="skill-name">SQL</div>
             </div>
-            <div class="skill-item">
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3>Frameworks & Technologies</h3>
+          <div class="skills-grid">
+            <div class="skill-box" data-aos="zoom-in" data-aos-delay="100">
+              <div class="skill-icon spring-icon">
                 <i class="fas fa-leaf"></i>
-                <h3>Spring</h3>
+              </div>
+              <div class="skill-name">Spring Boot</div>
             </div>
-            <div class="skill-item">
+            
+            <div class="skill-box" data-aos="zoom-in" data-aos-delay="200">
+              <div class="skill-icon tensor-icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <div class="skill-name">TensorFlow/PyTorch</div>
+            </div>
+            
+            <div class="skill-box" data-aos="zoom-in" data-aos-delay="300">
+              <div class="skill-icon">
+                <i class="fab fa-html5"></i>
+              </div>
+              <div class="skill-name">HTML & CSS</div>
+            </div>
+            
+            <div class="skill-box" data-aos="zoom-in" data-aos-delay="400">
+              <div class="skill-icon opencv-icon">
+                <i class="fas fa-eye"></i>
+              </div>
+              <div class="skill-name">OpenCV</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3>Tools & Core CS</h3>
+          <div class="skills-grid">
+            <div class="skill-box" data-aos="zoom-in" data-aos-delay="100">
+              <div class="skill-icon">
                 <i class="fab fa-git-alt"></i>
-                <h3>Git</h3>
+              </div>
+              <div class="skill-name">Git/GitHub</div>
             </div>
+            
+            <div class="skill-box" data-aos="zoom-in" data-aos-delay="200">
+              <div class="skill-icon">
+                <i class="fab fa-docker"></i>
+              </div>
+              <div class="skill-name">Docker</div>
+            </div>
+            
+            <div class="skill-box" data-aos="zoom-in" data-aos-delay="300">
+              <div class="skill-icon algo-icon">
+                <i class="fas fa-sitemap"></i>
+              </div>
+              <div class="skill-name">Algorithms & Data Structures</div>
+            </div>
+            
+            <div class="skill-box" data-aos="zoom-in" data-aos-delay="400">
+              <div class="skill-icon">
+                <i class="fas fa-code-branch"></i>
+              </div>
+              <div class="skill-name">Design Patterns & OOP</div>
+            </div>
+          </div>
         </div>
+      </div>
+      
+      <div class="languages-section">
+        <h3>Languages</h3>
+        <div class="languages-container">
+          <div class="language-item">
+            <span class="language-name">Azerbaijani</span>
+            <span class="language-level native">Native</span>
+          </div>
+          <div class="language-item">
+            <span class="language-name">English</span>
+            <span class="language-level fluent">Fluent</span>
+          </div>
+          <div class="language-item">
+            <span class="language-name">Turkish</span>
+            <span class="language-level fluent">Fluent</span>
+          </div>
+          <div class="language-item">
+            <span class="language-name">German</span>
+            <span class="language-level basic">Basic</span>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+    <div class="skills-parallax"></div>
+  </section>
 
-<!-- Projects Section -->
-<section id="projects">
+  <!-- Projects Section -->
+  <section id="projects" class="projects section">
     <div class="container">
-        <h2 data-aos="fade-up">Projects</h2>
-        <div class="projects-container">
-            <!-- Project 1 -->
-            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="project-info">
-                    <h3>Python Script Analyzer</h3>
-                    <p>A tool to analyze and improve Python scripts.</p>
-                    <a href="https://github.com/rzadevv/Python-script-analyzer-" target="_blank" class="btn project-btn">View on GitHub</a>
-                </div>
+      <div class="section-header">
+        <h2>My <span class="gradient-text">Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+      
+      <div class="project-grid">
+        <div class="project-card" data-aos="flip-left">
+          <div class="project-image">
+            <img src="img/project-1.jpg" alt="Deep Learning Gomoku Engine">
+            <div class="project-overlay">
+              <div class="project-tech-icons">
+                <span class="tech-icon"><i class="fab fa-python"></i></span>
+                <span class="tech-icon"><i class="fas fa-brain"></i></span>
+                <span class="tech-icon"><i class="fas fa-gamepad"></i></span>
+              </div>
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
             </div>
-            <!-- Project 2 -->
-            <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="project-info">
-                    <h3>Image Approximation</h3>
-                    <p>An application that approximates images using algorithms.</p>
-                    <a href="https://github.com/rzadevv/Image-Approximation" target="_blank" class="btn project-btn">View on GitHub</a>
-                </div>
+          </div>
+          <div class="project-content">
+            <h3>Deep Learning Gomoku Engine</h3>
+            <p class="project-tech">Python, PyTorch, Pandas, Pygame - 2025 (BSc Thesis)</p>
+            <p>Designed and trained a dual-headed Residual CNN with attention and dilation blocks on 5x5 game state, achieving 59% accuracy on unseen positions.</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm">Demo</a>
+              <a href="#" class="project-github"><i class="fab fa-github"></i></a>
             </div>
-            <!-- Project 3 -->
-            <div class="project-card" data-aos="fade-up" data-aos-delay="400">
-                <div class="project-info">
-                    <h3>Recipe Recommendations</h3>
-                    <p>A personalized recipe recommendation system.</p>
-                    <a href="https://github.com/rzadevv/personalized-recipe-recommendations" target="_blank" class="btn project-btn">View on GitHub</a>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="project-card" data-aos="flip-right">
+          <div class="project-image">
+            <img src="img/project-2.jpg" alt="HandMouse - Vision-Based Cursor Control">
+            <div class="project-overlay">
+              <div class="project-tech-icons">
+                <span class="tech-icon"><i class="fab fa-python"></i></span>
+                <span class="tech-icon"><i class="fas fa-eye"></i></span>
+                <span class="tech-icon"><i class="fas fa-hand-pointer"></i></span>
+              </div>
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>HandMouse - Vision-Based Cursor Control</h3>
+            <p class="project-tech">Python, OpenCV - 2025</p>
+            <p>Engineered a real-time hand-tracking system using computer vision to detect pinch-click and V-sign gestures, enabling hands-free mouse control with customizable sensitivity.</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm">Demo</a>
+              <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="flip-up">
+          <div class="project-image">
+            <img src="img/project-3.jpg" alt="AI Recipe Recommender">
+            <div class="project-overlay">
+              <div class="project-tech-icons">
+                <span class="tech-icon"><i class="fab fa-python"></i></span>
+                <span class="tech-icon"><i class="fas fa-brain"></i></span>
+                <span class="tech-icon"><i class="fas fa-utensils"></i></span>
+              </div>
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>AI Recipe Recommender</h3>
+            <p class="project-tech">Python, GPT-3.5 - 2024</p>
+            <p>Designed and deployed a personalized recipe recommendation system using GPT-3.5, integrating dietary filters and real-time user feedback to refine suggestions dynamically.</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm">Demo</a>
+              <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="flip-down">
+          <div class="project-image">
+            <img src="img/project-4.jpg" alt="Wedding Planner (Ongoing)">
+            <div class="project-overlay">
+              <div class="project-tech-icons">
+                <span class="tech-icon"><i class="fab fa-java"></i></span>
+                <span class="tech-icon"><i class="fas fa-database"></i></span>
+                <span class="tech-icon"><i class="fas fa-tasks"></i></span>
+              </div>
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Wedding Planner (Ongoing)</h3>
+            <p class="project-tech">Java, Spring Boot, PostgreSQL - 2025</p>
+            <p>Created event planning platform for RSVP, guest list, and task management with integrated notification system.</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm">In Progress</a>
+              <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+    <div class="projects-glow"></div>
+  </section>
 
-<!-- Back to Top Button -->
-<button id="backToTopBtn" title="Go to top">↑</button>
-
-<!-- Footer -->
-<footer>
+  <!-- Education Section -->
+  <section id="education" class="education section">
     <div class="container">
-        <p>&copy; 2023 RZA MIRZAYEV</p>
-    </div>
-</footer>
+      <div class="section-header">
+        <h2>My <span class="gradient-text">Education</span></h2>
+        <div class="section-line"></div>
+      </div>
 
-<!-- Project Details Modal -->
-<div id="project-modal" class="modal">
-    <div class="modal-content">
-        <button class="close-btn" aria-label="Close Modal">&times;</button>
-        <div class="modal-body">
-            <!-- Content will be injected via JavaScript -->
+      <div class="education-view-toggle">
+        <button class="view-btn active" data-view="cards">Cards View</button>
+        <button class="view-btn" data-view="timeline">Timeline View</button>
+      </div>
+
+      <div class="education-cards view-active">
+        <div class="education-card main-card" data-aos="zoom-in">
+          <div class="education-header">
+            <div class="education-icon">
+              <i class="fas fa-university"></i>
+            </div>
+            <div class="education-details">
+              <h3>Riga Technical University</h3>
+              <p class="education-program">Bachelor of Engineering Science in Computer Systems</p>
+              <p class="education-date">September 2022 - June 2025</p>
+            </div>
+          </div>
+          <div class="education-content">
+            <p class="education-location"><i class="fas fa-map-marker-alt"></i> Riga, Latvia</p>
+            <div class="education-highlights">
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fas fa-laptop-code"></i></div>
+                <p>Focus on computer systems design and development</p>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fas fa-code-branch"></i></div>
+                <p>Coursework in algorithms, software engineering, and data management</p>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fas fa-server"></i></div>
+                <p>Developing skills in backend development and machine learning</p>
+              </div>
+            </div>
+            <div class="education-subjects">
+              <h4>Key Subjects</h4>
+              <div class="subject-tags">
+                <span class="subject-tag">Data Structures</span>
+                <span class="subject-tag">Algorithms</span>
+                <span class="subject-tag">Database Systems</span>
+                <span class="subject-tag">Machine Learning</span>
+                <span class="subject-tag">Software Engineering</span>
+              </div>
+            </div>
+          </div>
         </div>
+        
+        <div class="education-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="education-header">
+            <div class="education-icon">
+              <i class="fas fa-exchange-alt"></i>
+            </div>
+            <div class="education-details">
+              <h3>Yildiz Technical University</h3>
+              <p class="education-program">Erasmus Exchange, Computer Engineering</p>
+              <p class="education-date">February 2024 - January 2025</p>
+            </div>
+          </div>
+          <div class="education-content">
+            <p class="education-location"><i class="fas fa-map-marker-alt"></i> Istanbul, Turkey</p>
+            <div class="education-highlights">
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fas fa-globe"></i></div>
+                <p>Exchange program focused on international perspective in technology</p>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fas fa-graduation-cap"></i></div>
+                <p>Advanced coursework in specialized computer engineering topics</p>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fas fa-users"></i></div>
+                <p>Collaborative projects with international student teams</p>
+              </div>
+            </div>
+            <div class="education-subjects">
+              <h4>Key Subjects</h4>
+              <div class="subject-tags">
+                <span class="subject-tag">Advanced Networking</span>
+                <span class="subject-tag">AI Systems</span>
+                <span class="subject-tag">Computer Vision</span>
+                <span class="subject-tag">Cloud Computing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="education-timeline-view">
+        <div class="advanced-timeline">
+          <div class="timeline-track">
+            <div class="timeline-progress"></div>
+            
+            <div class="timeline-event start-event">
+              <div class="event-dot"></div>
+              <div class="event-content">
+                <div class="event-date">September 2022</div>
+                <h3 class="event-title">Started Bachelor's Degree</h3>
+                <p>Began studies at Riga Technical University</p>
+              </div>
+            </div>
+
+            <div class="timeline-event">
+              <div class="event-dot"></div>
+              <div class="event-content">
+                <div class="event-date">May 2023</div>
+                <h3 class="event-title">First Year Completion</h3>
+                <p>Completed fundamentals of Computer Systems</p>
+              </div>
+            </div>
+            
+            <div class="timeline-event">
+              <div class="event-dot"></div>
+              <div class="event-content">
+                <div class="event-date">October 2023</div>
+                <h3 class="event-title">Hackathon Participation</h3>
+                <p>Participated in Raccoon Hackathon</p>
+              </div>
+            </div>
+
+            <div class="timeline-event">
+              <div class="event-dot"></div>
+              <div class="event-content">
+                <div class="event-date">February 2024</div>
+                <h3 class="event-title">Erasmus Exchange Begins</h3>
+                <p>Started exchange semester at Yildiz Technical University</p>
+              </div>
+            </div>
+            
+            <div class="timeline-event">
+              <div class="event-dot"></div>
+              <div class="event-content">
+                <div class="event-date">January 2025</div>
+                <h3 class="event-title">Exchange Program Completion</h3>
+                <p>Completed international studies in Istanbul</p>
+              </div>
+            </div>
+
+            <div class="timeline-event current-event">
+              <div class="event-dot"></div>
+              <div class="event-content">
+                <div class="event-date">June 2025</div>
+                <h3 class="event-title">Expected Graduation</h3>
+                <p>Bachelor's degree completion with thesis defense</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
+    
+    <div class="edu-circuit-pattern"></div>
+    <div class="edu-glow-effect"></div>
+  </section>
 
-<!-- Scripts -->
-<!-- External Libraries -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Let's <span class="gradient-text">Talk</span></h2>
+        <div class="section-line"></div>
+      </div>
+      
+      <div class="contact-content">
+        <p class="contact-text">What led you here? What are you looking for? I would love to hear from you over a virtual coffee chat!</p>
+        
+        <div class="contact-cta">
+          <a href="mailto:rzamirzayevdu@gmail.com" class="btn btn-primary btn-glow">
+            <span>Let's get in touch</span>
+            <i class="fas fa-paper-plane"></i>
+          </a>
+        </div>
+        
+        <div class="contact-cards">
+          <div class="contact-card" data-aos="zoom-in">
+            <div class="contact-card-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email</h3>
+            <p><a href="mailto:rzamirzayevdu@gmail.com">rzamirzayevdu@gmail.com</a></p>
+          </div>
+          
+          <div class="contact-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="contact-card-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Location</h3>
+            <p>Riga, Latvia</p>
+          </div>
+          
+          <div class="contact-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="contact-card-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <h3>GitHub</h3>
+            <p><a href="https://github.com/rzadev" target="_blank">github.com/rzadev</a></p>
+          </div>
+        </div>
+        
+        <div class="contact-message">
+          <p>I am always eager to learn and take on new technical challenges!</p>
+        </div>
+      </div>
+    </div>
+    <div class="contact-particles"></div>
+  </section>
 
-<!-- Initialize AOS -->
-<script>
-    AOS.init({ duration: 1200 });
-</script>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-name">RZA MIRZAYEV</div>
+        <div class="social-links">
+          <a href="https://github.com/rzadev" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:rzamirzayevdu@gmail.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2023 RZA MIRZAYEV. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 
-<!-- Your Custom Scripts -->
-<script src="script.js"></script>
+  <!-- Animated Background -->
+  <div class="animated-background">
+    <div class="grid-lines"></div>
+    <canvas id="matrix-canvas"></canvas>
+  </div>
 
+  <!-- Cursor Effects -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-circle"></div>
+  <div class="cursor-trail"></div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/matrix.js"></script>
 </body>
-</html>
+</html> 
